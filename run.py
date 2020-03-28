@@ -13,9 +13,3 @@ tado_email = os.environ['TADO_EMAIL']
 t = Tado(tado_email, tado_pass)
 
 print(t.get_bearer_token())
-
-# t.get_home_details()
-
-# t.get_presence()
-
-#print(f"{tado_email}'s password is '{tado_pass}'")
