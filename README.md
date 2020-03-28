@@ -1,5 +1,8 @@
 # Smarterhome
 
+[![Build Status](https://travis-ci.com/Kimbahir/Smarterhome.svg?branch=master)](https://travis-ci.com/Kimbahir/Smarterhome)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 The project is focused on using the Tado smart thermostats
 for establishing whether the home is empty or not, for
 leveraging the geofencing to other tools and devices.
