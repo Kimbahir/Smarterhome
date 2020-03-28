@@ -71,6 +71,9 @@ class Tado(object):
         Returns:
             int -- returns https status code, 200 for OK
         """
+        if self.refresh_token == "":
+            self.get_bearer_token()
+
         data = {
             'grant_type': 'refresh_token',
             'refresh_token': self.refresh_token,

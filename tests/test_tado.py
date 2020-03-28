@@ -31,8 +31,16 @@ def test_get_bearer_token(GetTado):
     assert GetTado.get_bearer_token() == 200
 
 
+def test_refresh_bearer_token(GetTado):
+    assert GetTado.refresh_bearer_token() == 200
+
+
 def test_get_home_id(GetTado):
     assert GetTado.get_home_id() == 200
+
+
+def test_get_home_details(GetTado):
+    assert GetTado.get_home_details() == 200
 
 
 def test_get_presence(GetTado):
