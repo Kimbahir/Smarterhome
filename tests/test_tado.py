@@ -19,12 +19,12 @@ def GetTado():
 
 def test_initialization_email():
     with pytest.raises(Exception, match=r".*Email.*"):
-        t = Tado("", "asdasdasd")
+        Tado("", "asdasdasd")
 
 
 def test_initialization_password():
     with pytest.raises(Exception, match=r".*password.*"):
-        t = Tado("foo@bar.com", "")
+        Tado("foo@bar.com", "")
 
 
 def test_get_bearer_token(GetTado):
