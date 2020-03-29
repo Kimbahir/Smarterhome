@@ -58,6 +58,9 @@ class Tado(object):
         logging.debug(
             f'The response was {response.status_code} and the content was {response.content}')
 
+        if response.status_code == 400:
+            raise Exception("Error: Bad credentials")
+
         r = loads(response.content)
 
         self.access_token = r['access_token']

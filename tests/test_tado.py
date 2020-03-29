@@ -27,6 +27,11 @@ def test_initialization_password():
         Tado("foo@bar.com", "")
 
 
+def test_wrong_password():
+    with pytest.raises(Exception, match=r"Error.*Bad credentials.*"):
+        Tado("foo@bar.com", "fubar").get_bearer_token()
+
+
 def test_get_bearer_token(GetTado):
     assert GetTado.get_bearer_token() == 200
 
